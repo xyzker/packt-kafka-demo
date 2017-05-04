@@ -75,7 +75,7 @@ public class MultiThreadHLConsumer {
 	public static void main(String[] args) {
 		String topic = "partitiontopic1";
 		int threadCount = 5;
-		MultiThreadHLConsumer simpleHLConsumer = new MultiThreadHLConsumer("server26:2181", "testgroup", topic);
+		MultiThreadHLConsumer simpleHLConsumer = new MultiThreadHLConsumer("10.110.25.196:2181,10.110.25.197:2181,10.110.25.198:2181", "testgroup", topic);
 		simpleHLConsumer.testConsumer(threadCount);
 
 		try {
